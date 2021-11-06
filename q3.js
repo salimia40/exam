@@ -3,10 +3,8 @@ function q(input) {
   var output = 1;
   for (var i = 0; i < chArray.length; i++) {
     var char = chArray[i];
-    if (char  == 'k' || char == 'g' || char == 'f') {
+    if (['k' ,'g' , 'r', 'f'].includes(char)) {
       output *= 2;
-    } else if (char == 'r') {
-      output *= 3;
     }
   }
   return output;
